@@ -1,0 +1,23 @@
+body{
+    background-image: url(""); 
+    background-repeat:no-repeat;
+    background-size: cover; 
+    background-position:top top;
+}
+h1,h2,h3{
+     color: rgb(222, 225, 235);
+     background-color:rgb(7, 7, 7);
+}
+
+p,p1{
+ color: rgb(220, 220, 236);
+ background-color: rgb(11, 11, 11); 
+}
+div{
+    color: white;
+width: 200px;
+height: 1;
+}
+ul,ol{
+    color: rgb(15, 1, 1);
+}
