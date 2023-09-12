@@ -1,0 +1,95 @@
+body {
+    background-image: url('IMG_5602.JPEG'); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: sticky;
+}
+img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 50%;
+}
+.mittnamn{
+    font-family: Arial;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 99vh; 
+}
+.underrubrik{
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    display:flex;
+     
+    
+}
+h1{
+     color: rgb(222, 225, 235);
+     background-color:rgb(12, 12, 12);
+}
+p{
+ color: rgb(220, 220, 236);
+ background-color: black;
+
+}
+ul{
+    color: rgb(15, 1, 1);
+}
+.om-button,.kontakt-button,.start-button{
+    background-color: #357adb;
+     color: white;
+      padding: 10px 22px; 
+      text-align: center;
+      font-weight: bold; 
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;    
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)
+    }
+
+    .om-button:hover,.kontakt-button:hover,.start-button:hover{
+      opacity: 0.7;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30)
+    }
+    div{
+        text-align: center;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-areas:
+          "header header header"
+          "left main right"
+          "footer footer footer";
+      }
+      
+      .header {
+        grid-area: header;
+        position: sticky;
+        top: 0px;
+        
+      }
+      
+      .left {
+        grid-area: left;
+      }
+      
+      .main {
+        grid-area: main;
+      }
+      
+      .right {
+        grid-area: right;
+      }
+      
+      .footer {
+        grid-area: footer;
+      }
