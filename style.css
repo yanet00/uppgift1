@@ -1,95 +1,95 @@
-body {
+body { /*Bakgrunsbild för hela sidan*/
     background-image: url('IMG_5602.JPEG'); 
-    background-size: cover;
-    background-repeat: no-repeat; 
-    position: sticky;
+    background-size: cover;/*bilden täcker hela sidan*/
+    background-repeat: no-repeat; /*Bilden ska inte upprepas flera gånger*/
+    position: sticky;/*Bilden fast vid skärmen när man skrollar*/
 }
-img {
-    width: 150px; 
-    height: 150px; 
-    object-fit: cover;
-    border-radius: 50%;
+img { /* */
+    width: 200px; /*Bredd*/
+    height: 200px; /*Längd*/
+    object-fit: cover;/* Behåll bildens proportioner och skär den om det behövs*/
+    border-radius: 50% /*Gör en rundad kant för bilden*/
 }
-.mittnamn{
-    font-family: Arial;
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
+.mittnamn{/*Still för texten*/
+    font-family: Arial;/*Typsnitt*/
+    font-size: 50px;/*Fontstorlek*/
+    font-weight: bold;/*FEtstil för texten*/
+    text-align: center;/*centrera texten*/
+    display: flex;/*Använd flexbox för centering*/
     justify-content: center;
     align-items: center; 
-    height: 99vh; 
+    height: 99vh; /*Vyhöjden för att centerar */
 }
-.underrubrik{
-    font-family: Arial;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    justify-content: center;
-    display:flex;
-     
-    
+.underrubrik{/*Still för texten */
+    font-family: Arial;/*Typsnitt*/
+    font-size: 25px;/*Fontstorleken*/
+    font-weight: bold;/*fetsti för texten*/
+    text-align: center;/*centerara texten*/
+    justify-content: center;/*centrera*/
+    display: flex;/*Använd flexbox*/
+    align-items: center;    
 }
-h1{
+h1{/*Färg &backrundsfärg för alla rubriker */
      color: rgb(222, 225, 235);
      background-color:rgb(12, 12, 12);
 }
-p{
+p{/* 'färg & backgrundsfärg för alla paragrafer*/
  color: rgb(220, 220, 236);
  background-color: black;
 
 }
-ul{
+ul{/* Färg för lista*/
     color: rgb(15, 1, 1);
-}
-.om-button,.kontakt-button,.start-button{
-    background-color: #357adb;
-     color: white;
-      padding: 10px 22px; 
-      text-align: center;
-      font-weight: bold; 
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;    
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)
+}/*Stillar för knapparna*/
+.om-button,.kontakt-button,.start-button,.skicka-button{/*stil för knappar */
+    background-color: #357adb;/*Backgrundsfärg*/
+     color: white;/*Textfärg för knapparna*/
+      padding: 10px 22px; /**/
+      text-align: center;/*Centerara texten*/
+      font-weight: bold; /*Fetstil för texten*/
+      font-size: 16px;/*Fontstorlek för texten*/
+      border: none;/*ta bort knappens ram*/
+      border-radius: 5px;/*Runda hörnen */
+      cursor: pointer; /*Ändra muspekanern  till en hand när musen svävar över knapparna*/   
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)/*Skugga*/
     }
 
-    .om-button:hover,.kontakt-button:hover,.start-button:hover{
+    .om-button:hover,.kontakt-button:hover,.start-button:hover,.skicka-button:hover{/* Stillar för knapparna när musen svävar över*/
       opacity: 0.7;
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30)
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30)/*Ändra skuggstilen*/
     }
     div{
-        text-align: center;
+        text-align: center;/* Centerara texten*/
     }
-    .container {
-        display: grid;
-        grid-template-columns: 25% 50% 25%;
+    .container {/*stillar för .container som använder CSS Grid */
+        display: grid; /*FÖr att definiera layouten*/
+        grid-template-columns: 33% 33% 33%;/*Dela sidan i 3 lika stora kolumner*/
         grid-template-areas:
           "header header header"
           "left main right"
           "footer footer footer";
       }
-      
-      .header {
+       .header {/* */
         grid-area: header;
-        position: sticky;
-        top: 0px;
+        position: sticky;/*GÖr det fäst vid toppen av sidan*/
+        top: 0px;/*Använd 0 pixlar av utrymme ovanför header*/
         
       }
-      
-      .left {
+      .left {/* */
         grid-area: left;
       }
-      
-      .main {
+      .main {/* */
         grid-area: main;
       }
-      
-      .right {
+      .right {/* */
         grid-area: right;
       }
-      
-      .footer {
+      .footer {/* */
         grid-area: footer;
       }
+#footer img{/* */
+  margin-bottom: 15px;
+}
+#footer #browsers img{/* */
+  width: 45px;
+}
