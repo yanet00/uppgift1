@@ -1,5 +1,6 @@
 body { /*Bakgrunsbild för hela sidan*/
     background-image: url('IMG_5602.JPEG'); 
+    background-size: 100% 100%;
     background-size: cover;/*bilden täcker hela sidan*/
     background-repeat: no-repeat; /*Bilden ska inte upprepas flera gånger*/
     position: sticky;/*Bilden fast vid skärmen när man skrollar*/
@@ -30,8 +31,8 @@ img { /* */
     align-items: center;    
 }
 h1{/*Färg &backrundsfärg för alla rubriker */
-     color: rgb(222, 225, 235);
-     background-color:rgb(12, 12, 12);
+     color: rgb(8, 9, 9);
+     
 }
 p{/* 'färg & backgrundsfärg för alla paragrafer*/
  color: rgb(220, 220, 236);
@@ -75,21 +76,35 @@ ul{/* Färg för lista*/
         top: 0px;/*Använd 0 pixlar av utrymme ovanför header*/
         
       }
-      .left {/* */
+      .left {
         grid-area: left;
       }
-      .main {/* */
+      .main {
         grid-area: main;
       }
-      .right {/* */
+      .right {
         grid-area: right;
       }
-      .footer {/* */
+      .footer {
         grid-area: footer;
       }
-#footer img{/* */
-  margin-bottom: 15px;
-}
-#footer #browsers img{/* */
-  width: 45px;
-}
+
+      button a {
+        color: white;
+        text-decoration: none;
+      }
+      /*För mindre skärmar*/
+      @media screen and (max-width: 400) {
+          body {
+              background-size: 100% 100%;
+              background-attachment:scroll; 
+
+              }
+            }
+      /*För mellanstöra skärmar*/
+      @media (min-width: 769px) and (max-width: 1024px){
+
+      }/*För större skrämar*/
+      @media (min-width:1025px){
+
+      }
