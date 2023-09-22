@@ -1,9 +1,11 @@
 body { /*Bakgrunsbild för hela sidan*/
     background-image: url('IMG_5602.JPEG'); 
     background-size: 100% 100%;
+    background-attachment: fixed;
     background-size: cover;/*bilden täcker hela sidan*/
     background-repeat: no-repeat; /*Bilden ska inte upprepas flera gånger*/
     position: sticky;/*Bilden fast vid skärmen när man skrollar*/
+    
 }
 img { /* */
     width: 200px; /*Bredd*/
@@ -27,9 +29,11 @@ img { /* */
     font-weight: bold;/*fetsti för texten*/
     text-align: center;/*centerara texten*/
     justify-content: center;/*centrera*/
-    display: flex;/*Använd flexbox*/
-    align-items: center;    
-}
+    display: flex;/*flexbox*/   
+    
+    
+    }
+
 h1{/*Färg &backrundsfärg för alla rubriker */
      color: rgb(8, 9, 9);
      
@@ -55,9 +59,27 @@ ul{/* Färg för lista*/
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)/*Skugga*/
     }
 
-    .om-button:hover,.kontakt-button:hover,.start-button:hover,.skicka-button:hover{/* Stillar för knapparna när musen svävar över*/
+    .om-button:hover,.kontakt-button:hover,.start-button:hover{/* Stillar för knapparna när musen svävar över*/
       opacity: 0.7;
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30)/*Ändra skuggstilen*/
+    }
+    #skicka{
+      background-color: #357adb;/*Backgrundsfärg*/
+      color: white;/*Textfärg för knapparna*/
+       padding: 10px 15px;
+       text-align: center;/*Centerara texten*/
+       font-weight: bold; /*Fetstil för texten*/
+       font-size: 16px;/*Fontstorlek för texten*/
+       border: none;/*ta bort knappens ram*/
+       border-radius: 5px;/*Runda hörnen */
+       cursor: pointer; /*Ändra muspekanern  till en hand när musen svävar över knapparna*/   
+       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)/*Skugga*/
+       
+    }
+    #skicka:hover{
+      opacity: 0.7;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30)
+
     }
     div{
         text-align: center;/* Centerara texten*/
@@ -98,9 +120,9 @@ ul{/* Färg för lista*/
           body {
               background-size: 100% 100%;
               background-attachment:scroll; 
-
               }
-            }
+              }
+      
       /*För mellanstöra skärmar*/
       @media (min-width: 769px) and (max-width: 1024px){
 
